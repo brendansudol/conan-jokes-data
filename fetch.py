@@ -5,8 +5,8 @@ import requests
 
 
 # conan's internal joke data api relies on a valid joke_id
-# this initial id corresponds with a joke from 4/5/16
-INITIAL_ID = '94067'
+# this initial id corresponds with a joke from 3/2/17
+INITIAL_ID = '99006'
 
 
 def make_url(id):
@@ -26,6 +26,7 @@ while True:
         break
 
     for d in data:
+        print('{}\n'.format(d['title']))
         fname = 'output/jokes/{}.json'.format(d['id'])
         with open(fname, 'w') as f:
             json.dump(d, f, ensure_ascii=False)
