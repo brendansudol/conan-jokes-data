@@ -5,8 +5,8 @@ import requests
 
 
 # conan's internal joke data api relies on a valid joke_id
-# this initial id corresponds with a joke from 3/2/17
-INITIAL_ID = '99006'
+# this initial id corresponds with a joke from 10/4/17
+INITIAL_ID = '101606'
 
 
 def make_url(id):
