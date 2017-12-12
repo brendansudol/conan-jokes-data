@@ -5,8 +5,8 @@ import requests
 
 
 # conan's internal joke data api relies on a valid joke_id
-# this initial id corresponds with a joke from 10/4/17
-INITIAL_ID = '101606'
+# this initial id corresponds with a joke from 12/11/17
+INITIAL_ID = '102204'
 
 
 def make_url(id):
@@ -14,7 +14,7 @@ def make_url(id):
 
 
 # fetch and store jokes (one per file)
-# this takes awhile (~40 mins)
+# this takes awhile (~50 mins)
 url = make_url(INITIAL_ID)
 
 while True:
