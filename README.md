@@ -1,8 +1,8 @@
 python script to fetch Conan O'Brien's monologue [jokes](http://teamcoco.com/jokes)
 
-output is ~9.7k jokes from 7+ years of shows
+output is ~9.8k jokes from 7+ years of shows
 
-**regenerate**: 
+**regenerate**:
 
 (I used python 3.5)
 
