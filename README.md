@@ -1,6 +1,7 @@
-python script to fetch Conan O'Brien's monologue [jokes](http://teamcoco.com/jokes)
+python script to fetch Conan O'Brien's monologue
+[jokes](http://teamcoco.com/jokes)
 
-output is ~9.8k jokes from 7+ years of shows
+output is ~9.9k jokes from Nov 2010 to Apr 2018
 
 **regenerate**:
 
@@ -19,11 +20,14 @@ output is ~9.8k jokes from 7+ years of shows
 
 ```json
 {
-  "body": "A lock of Justin Bieber's hair sold on eBay today for over $40,000. Now here's my question—do you think I should frame it or make it into a bracelet?",
+  "body":
+    "A lock of Justin Bieber's hair sold on eBay today for over $40,000. Now here's my question—do you think I should frame it or make it into a bracelet?",
   "credit-name": "Conan O'Brien",
   "hier1": "",
-  "thumb": "http://cdn.teamcococdn.com/image/650x650,frame:1/monologue-s1-21d7cb1818b0e2c64c19ba2634b76e27.jpg",
-  "title": "Mar 2, 2011 - A lock of Justin Bieber's hair sold on eBay today for over",
+  "thumb":
+    "http://cdn.teamcococdn.com/image/650x650,frame:1/monologue-s1-21d7cb1818b0e2c64c19ba2634b76e27.jpg",
+  "title":
+    "Mar 2, 2011 - A lock of Justin Bieber's hair sold on eBay today for over",
   "tags": [
     {
       "status": 1,
@@ -92,8 +96,10 @@ output is ~9.8k jokes from 7+ years of shows
   ],
   "id": 64606,
   "tag": "main",
-  "thumbWithText": "http://cdn.teamcococdn.com/jokes/64606/1,1/650/jokes/mar-2-2011-a-lock-of-justin-biebers-hair-sold-on-ebay-today-for-over.jpg",
+  "thumbWithText":
+    "http://cdn.teamcococdn.com/jokes/64606/1,1/650/jokes/mar-2-2011-a-lock-of-justin-biebers-hair-sold-on-ebay-today-for-over.jpg",
   "credit-date": "March 02, 2011",
-  "slug": "jokes/mar-2-2011-a-lock-of-justin-biebers-hair-sold-on-ebay-today-for-over"
+  "slug":
+    "jokes/mar-2-2011-a-lock-of-justin-biebers-hair-sold-on-ebay-today-for-over"
 }
 ```

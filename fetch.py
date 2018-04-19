@@ -5,8 +5,8 @@ import requests
 
 
 # conan's internal joke data api relies on a valid joke_id
-# this initial id corresponds with a joke from 2/7/18
-INITIAL_ID = '102709'
+# this initial id corresponds with a joke from 4/18/18
+INITIAL_ID = '103463'
 
 
 def make_url(id):
@@ -34,7 +34,7 @@ while True:
     url = make_url(data[-1]['id'])
 
 
-# combine all joke data into one json file
+# gather all jokes together
 joke_files = glob.glob('{}/output/jokes/*'.format(os.getcwd()))
 jokes = []
 
@@ -42,11 +42,14 @@ for file in joke_files:
     with open(file) as f:
         jokes.append(json.loads(f.read()))
 
+# sort by id
+jokes = sorted(jokes, key=lambda j: j['id'])
+
+# output jokes (with meta data) to json file
 with open('output/jokes-all.json', 'w') as f:
     json.dump(jokes, f, ensure_ascii=False)
 
-
-# output jokes (no meta data) to text file
+# output jokes (just the jokes) to text file
 with open("output/jokes-all-clean.txt", "w") as f:
     for joke in jokes:
         f.write('{}\n\n'.format(joke['body']))
